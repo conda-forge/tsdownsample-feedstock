@@ -22,7 +22,8 @@ requirements:
       - {{ compiler('rust') }}
   host:
     - python
-    - maturin >=0.14,<0.15
+    - crossenv                            # [build_platform != target_platform]
+    - maturin >=0.14,<0.15                # [build_platform != target_platform]
     - pip
   run:
     - python
