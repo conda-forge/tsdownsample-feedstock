@@ -44,7 +44,7 @@ about:
   license: MIT
   license_file:
     - LICENSE
-    - local_dependencies/downsample_rs/LICENSE
+    - downsample_rs/LICENSE
 
 extra:
   recipe-maintainers:
