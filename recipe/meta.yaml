@@ -1,5 +1,5 @@
 {% set name = "tsdownsample" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsdownsample-{{ version }}.tar.gz
-  sha256: 1c338ce491599403b007f9b67f4a154d002ecfbd1550c99fad29aace36ebaedc
+  sha256: e597d6f1891f8163d9425b5f71759bfb17e3545ab72618d7ebaae0356e702829
 
 build:
-  skip: true  # [py<37 or win]
+  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
